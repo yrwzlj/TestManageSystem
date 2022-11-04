@@ -1,0 +1,4 @@
+#Key and value types
+#Mon Feb 28 17:45:11 CST 2022
+keyType=java.lang.String
+valueType=com.lczyfz.edp.springboot.core.entity.User

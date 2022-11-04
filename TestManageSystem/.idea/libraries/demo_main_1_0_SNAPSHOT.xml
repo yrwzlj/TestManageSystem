@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="demo-main-1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/TestManageSystem-main/target/demo-main-1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,51 @@
+package com.lczyfz.edp.springboot.demo.sys.vo;
+
+import com.lczyfz.edp.springboot.core.validation.Create;
+import com.lczyfz.edp.springboot.core.validation.Update;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
+/**
+ * @Author LJX
+ * @Date 2022/2/25 16:29
+ * @Description com.lczyfz.edp.springboot.sys.vo
+ * @version: 1.0
+ */
+@ApiModel(value = "StuVO", description = "学生实体VO")
+@Data
+public class StuVO {
+    /**
+     *
+     * 表字段 : stu.id
+     *
+     * @mbggenerated Mon Feb 28 15:57:17 CST 2022
+     */
+    @ApiModelProperty(value = "id")
+    @NotNull(groups = {Update.class},message = "不能为空")
+    private String id;
+
+    /**
+     *
+     * 表字段 : stu.name
+     *
+     * @mbggenerated Mon Feb 28 15:57:17 CST 2022
+     */
+    @ApiModelProperty(value = "姓名",example = "张三")
+    @NotBlank(groups = {Create.class},message = "不能为空")
+    private String name;
+
+    /**
+     *
+     * 表字段 : stu.age
+     *
+     * @mbggenerated Mon Feb 28 15:57:17 CST 2022
+     */
+    @ApiModelProperty(value = "年龄",example = "10")
+    @NotNull(groups = {Create.class},message = "不能为空")
+    private Integer age;
+
+}
